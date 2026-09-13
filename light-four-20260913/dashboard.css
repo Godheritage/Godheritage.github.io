@@ -65,3 +65,30 @@
 .four-mini{margin-top:8px;display:flex;flex-direction:column;gap:3px}
 .four-mini span{font-size:11px;color:#405f58;line-height:1.4}
 .machine-chip{min-height:188px}
+
+html.embed .top{height:48px;gap:12px;padding:0 12px}
+html.embed .top-link{display:none}
+html.embed main{padding:10px 12px 16px}
+html.embed .intro{padding:4px 0 10px;gap:12px}
+html.embed .intro h1{font-size:22px;margin:0 0 6px}
+html.embed .lead br{display:none}
+html.embed .experiment-stamp,
+html.embed .briefing-grid,
+html.embed .contract-panel,
+html.embed .paper-panel,
+html.embed .roster-panel,
+html.embed #timing-section,
+html.embed .bottom-grid,
+html.embed .token-note,
+html.embed .details-grid,
+html.embed .downloads,
+html.embed footer{display:none!important}
+html.embed .briefing{margin:0 0 10px}
+html.embed .briefing-head h2{font-size:16px}
+html.embed .machine-chip{min-height:0;padding:10px 12px}
+html.embed .machine-strip{margin:10px 0}
+html.embed .kpis{margin-bottom:14px}
+html.embed .cards{gap:12px}
+html.embed .preview{aspect-ratio:2.1}
+html.embed .canvas-wrap{height:min(360px,46vh)}
+html.embed .detail-heading h1{font-size:22px}
