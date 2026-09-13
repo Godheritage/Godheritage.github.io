@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import {GLTFLoader} from './vendor/GLTFLoader.js';
 import {OrbitControls} from './vendor/OrbitControls.js';
 import {renderOverview,renderCaseSummary,cardMarkup, renderBriefing} from './summary.js';
+if (window.self !== window.top || location.search.indexOf('embed') !== -1) document.documentElement.classList.add('embed');
 
 const $=id=>document.getElementById(id), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const kindNames={physics:'物理计算轨迹',reduced_physics:'作者简化动力学',authored_animation:'预设动画 · 不是物理验证',static:'静态模型'};
