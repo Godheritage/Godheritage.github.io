@@ -1,0 +1,732 @@
+{
+  "schema_version": "slim_geometry_v1",
+  "scene_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\scene.json",
+  "scene_sha256": "54b1ed27c95aee13ce24d2ea9fd5cc4cdd5f5a06036984bee27a325f569b015f",
+  "units": "m",
+  "input_units": "mm",
+  "bodies": [
+    {
+      "id": "crank",
+      "fixed": false,
+      "color": [
+        0.85,
+        0.38,
+        0.12,
+        1.0
+      ],
+      "position_m": [
+        -0.06493792805269766,
+        -0.013609906006723696,
+        0.05199999999999998
+      ],
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_position_m": [
+        -0.06493792805269766,
+        -0.013609906006723696,
+        0.05199999999999998
+      ],
+      "density_kg_m3": 7800.0,
+      "mass_kg": 0.10701759988695972,
+      "volume_m3": 1.3720205113712786e-05,
+      "inertia_kg_m2": [
+        [
+          5.345421172116472e-05,
+          -3.667888645303084e-05,
+          6.655690260953042e-20
+        ],
+        [
+          -3.667888645303084e-05,
+          3.731010782024978e-05,
+          2.6549990352222868e-20
+        ],
+        [
+          6.655690260953042e-20,
+          2.6549990352222868e-20,
+          8.793182514137655e-05
+        ]
+      ],
+      "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-001.obj",
+      "audit_mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-001.obj",
+      "mesh_sha256": "413e5bc78db7bc72df777d3a35bf2b7f3fcba3f88f6c7a36af925aa4eec6fa8a",
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-001.step",
+      "source_sha256": "0b86b6a252225d98b3b5a3c982f82c7b09199e6d5b033c764727d165e49df39e",
+      "source_stat": [
+        158562,
+        1789265304000000000,
+        465435623840
+      ],
+      "source_kind": "step",
+      "source_solid_ids": [
+        "solid_1",
+        "solid_2",
+        "solid_3",
+        "solid_4"
+      ],
+      "source_components": [
+        {
+          "solid_id": "solid_1",
+          "source_node": "solid_1",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-001-solid-001.obj",
+          "sha256": "15057f335415fb8c0c9d1673fbec4e64a9c1393ddceb35bb734703edd82a3a7c",
+          "vertex_count": 680,
+          "triangle_count": 1356,
+          "export_vertex_error_max_m": 0.0
+        },
+        {
+          "solid_id": "solid_2",
+          "source_node": "solid_2",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-001-solid-002.obj",
+          "sha256": "9104d07b336dc1eea7b429417aa262bff7d01cb0945388f61a1c5cd340fc253f",
+          "vertex_count": 2438,
+          "triangle_count": 4872,
+          "export_vertex_error_max_m": 0.0
+        },
+        {
+          "solid_id": "solid_3",
+          "source_node": "solid_3",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-001-solid-003.obj",
+          "sha256": "c2122474e721111aadce13c8c5aa0c720237e01c2fc1bcd0653bf8fed0ae3fe5",
+          "vertex_count": 2813,
+          "triangle_count": 5626,
+          "export_vertex_error_max_m": 0.0
+        },
+        {
+          "solid_id": "solid_4",
+          "source_node": "solid_4",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-001-solid-004.obj",
+          "sha256": "92fe94427acae7d0de444a30459d78179bee42359d08fe351beb6beaf9d51c06",
+          "vertex_count": 740,
+          "triangle_count": 1476,
+          "export_vertex_error_max_m": 0.0
+        }
+      ],
+      "source_analytic_material": [
+        {
+          "type": "capsule",
+          "center_source_m": [
+            -0.037,
+            0.0254,
+            0.052000000000000005
+          ],
+          "axis_source": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "radius_m": 0.0015,
+          "straight_length_m": 0.001,
+          "source_cylinder_length_m": 0.004,
+          "proof": {
+            "method": "OCCT non-destructive Cut(complete_source_derived_cylinder, original_solid)",
+            "cut_is_done": true,
+            "missing_volume_mm3": 0.0,
+            "candidate_cylinder_volume_mm3": 28.274333882308138,
+            "source_cylinder_face_indices": [
+              3
+            ],
+            "source_face_axial_intervals_mm": [
+              [
+                23.4,
+                27.4
+              ]
+            ],
+            "source_axis_anchor_mm": [
+              -37.0,
+              0.0,
+              52.0
+            ],
+            "source_cylinder_axial_interval_mm": [
+              23.4,
+              27.4
+            ],
+            "capsule_containment": "Same radius; straight segment length L-2r; hemispherical ends stay between the containing cylinder end planes",
+            "original_solid_modified": false
+          },
+          "source_solid_id": "solid_1",
+          "center_local_m": [
+            0.02793792805269766,
+            0.039009906006723695,
+            2.7755575615628914e-17
+          ]
+        },
+        {
+          "type": "capsule",
+          "center_source_m": [
+            -0.055,
+            0.0,
+            0.052000000000000005
+          ],
+          "axis_source": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "radius_m": 0.005,
+          "straight_length_m": 0.0108,
+          "source_cylinder_length_m": 0.020800000000000003,
+          "proof": {
+            "method": "OCCT non-destructive Cut(complete_source_derived_cylinder, original_solid)",
+            "cut_is_done": true,
+            "missing_volume_mm3": 0.0,
+            "candidate_cylinder_volume_mm3": 1633.6281798666928,
+            "source_cylinder_face_indices": [
+              8
+            ],
+            "source_face_axial_intervals_mm": [
+              [
+                -10.4,
+                10.4
+              ]
+            ],
+            "source_axis_anchor_mm": [
+              -55.0,
+              0.0,
+              52.0
+            ],
+            "source_cylinder_axial_interval_mm": [
+              -10.4,
+              10.4
+            ],
+            "capsule_containment": "Same radius; straight segment length L-2r; hemispherical ends stay between the containing cylinder end planes",
+            "original_solid_modified": false
+          },
+          "source_solid_id": "solid_2",
+          "center_local_m": [
+            0.009937928052697657,
+            0.013609906006723696,
+            2.7755575615628914e-17
+          ]
+        },
+        {
+          "type": "capsule",
+          "center_source_m": [
+            -0.08700000000000001,
+            -0.04,
+            0.052000000000000005
+          ],
+          "axis_source": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "radius_m": 0.006500000000000001,
+          "straight_length_m": 0.011,
+          "source_cylinder_length_m": 0.024,
+          "proof": {
+            "method": "OCCT non-destructive Cut(complete_source_derived_cylinder, original_solid)",
+            "cut_is_done": true,
+            "missing_volume_mm3": 0.0,
+            "candidate_cylinder_volume_mm3": 3185.57495074005,
+            "source_cylinder_face_indices": [
+              15
+            ],
+            "source_face_axial_intervals_mm": [
+              [
+                -52.0,
+                -28.0
+              ]
+            ],
+            "source_axis_anchor_mm": [
+              -87.0,
+              0.0,
+              52.0
+            ],
+            "source_cylinder_axial_interval_mm": [
+              -52.0,
+              -28.0
+            ],
+            "capsule_containment": "Same radius; straight segment length L-2r; hemispherical ends stay between the containing cylinder end planes",
+            "original_solid_modified": false
+          },
+          "source_solid_id": "solid_3",
+          "center_local_m": [
+            -0.02206207194730235,
+            -0.026390093993276305,
+            2.7755575615628914e-17
+          ]
+        },
+        {
+          "type": "capsule",
+          "center_source_m": [
+            -0.055,
+            -0.0174,
+            0.052000000000000005
+          ],
+          "axis_source": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "radius_m": 0.0015,
+          "straight_length_m": 0.0029999999999999983,
+          "source_cylinder_length_m": 0.005999999999999998,
+          "proof": {
+            "method": "OCCT non-destructive Cut(complete_source_derived_cylinder, original_solid)",
+            "cut_is_done": true,
+            "missing_volume_mm3": 0.0,
+            "candidate_cylinder_volume_mm3": 42.41150082346219,
+            "source_cylinder_face_indices": [
+              7
+            ],
+            "source_face_axial_intervals_mm": [
+              [
+                -20.4,
+                -14.4
+              ]
+            ],
+            "source_axis_anchor_mm": [
+              -55.0,
+              0.0,
+              52.0
+            ],
+            "source_cylinder_axial_interval_mm": [
+              -20.4,
+              -14.4
+            ],
+            "capsule_containment": "Same radius; straight segment length L-2r; hemispherical ends stay between the containing cylinder end planes",
+            "original_solid_modified": false
+          },
+          "source_solid_id": "solid_4",
+          "center_local_m": [
+            0.009937928052697657,
+            -0.003790093993276303,
+            2.7755575615628914e-17
+          ]
+        }
+      ],
+      "mass_properties_source": "occt_brep",
+      "mass_combination": "sum_source_properties_with_parallel_axis_theorem",
+      "fidelity": {
+        "representation": "original_source_surface_mesh",
+        "convex_hull_used": false,
+        "decomposition_used": false,
+        "decimation_used": false,
+        "topology_repaired": false,
+        "coincident_vertex_seams_welded": true,
+        "step_linear_deflection_m": 1e-06,
+        "step_angular_tolerance_rad": 0.12,
+        "step_all_surface_deflection_control": true,
+        "brep_surface_distance_independently_measured": false,
+        "collider_and_audit_use_same_original_mesh": false,
+        "original_mesh_retained_in_collider": true,
+        "source_mesh_refinement": "conformal midpoint subdivision of original facets",
+        "source_mesh_max_edge_m": 0.08,
+        "contained_analytic_material_supplements": 4,
+        "export_vertex_error_max_m": 0.0,
+        "triangle_count": 13330
+      },
+      "distance_query": {
+        "space": "world_metres",
+        "inside_material_distance_m": 0.0,
+        "backend": "original_step_brep"
+      }
+    },
+    {
+      "id": "frame",
+      "fixed": true,
+      "color": [
+        0.28,
+        0.36,
+        0.43,
+        1.0
+      ],
+      "position_m": [
+        0.00044299041394128727,
+        0.00421586204143759,
+        0.010087439844526534
+      ],
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_position_m": [
+        0.00044299041394128727,
+        0.00421586204143759,
+        0.010087439844526534
+      ],
+      "density_kg_m3": 2700.0,
+      "mass_kg": 0.5856168858784906,
+      "volume_m3": 0.00021689514291795947,
+      "inertia_kg_m2": [
+        [
+          0.000667664395768906,
+          -0.0001791345498268283,
+          -2.6819696672404548e-05
+        ],
+        [
+          -0.0001791345498268283,
+          0.002998451490340018,
+          -5.958311671664584e-05
+        ],
+        [
+          -2.6819696672404548e-05,
+          -5.958311671664584e-05,
+          0.0033942237746833184
+        ]
+      ],
+      "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-002.obj",
+      "audit_mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-002.obj",
+      "mesh_sha256": "c68176c589336fe48b0c69a72dd14bfc055338bef6000f15512991267436cec5",
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-002.step",
+      "source_sha256": "f9dba4542b741c2d483c78790a233a4a6b983c81f404715f8f4a2962292bd1b9",
+      "source_stat": [
+        178884,
+        1789265304000000000,
+        465435623936
+      ],
+      "source_kind": "step",
+      "source_solid_ids": [
+        "solid_1"
+      ],
+      "source_components": [
+        {
+          "solid_id": "solid_1",
+          "source_node": "solid_1",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-002-solid-001.obj",
+          "sha256": "c68176c589336fe48b0c69a72dd14bfc055338bef6000f15512991267436cec5",
+          "vertex_count": 5020,
+          "triangle_count": 10068,
+          "export_vertex_error_max_m": 0.0
+        }
+      ],
+      "source_analytic_material": [],
+      "mass_properties_source": "occt_brep",
+      "mass_combination": "sum_source_properties_with_parallel_axis_theorem",
+      "fidelity": {
+        "representation": "original_source_surface_mesh",
+        "convex_hull_used": false,
+        "decomposition_used": false,
+        "decimation_used": false,
+        "topology_repaired": false,
+        "coincident_vertex_seams_welded": true,
+        "step_linear_deflection_m": 1e-06,
+        "step_angular_tolerance_rad": 0.12,
+        "step_all_surface_deflection_control": true,
+        "brep_surface_distance_independently_measured": false,
+        "collider_and_audit_use_same_original_mesh": true,
+        "original_mesh_retained_in_collider": true,
+        "source_mesh_refinement": "conformal midpoint subdivision of original facets",
+        "source_mesh_max_edge_m": 0.08,
+        "contained_analytic_material_supplements": 0,
+        "export_vertex_error_max_m": 0.0,
+        "triangle_count": 10068
+      },
+      "distance_query": {
+        "space": "world_metres",
+        "inside_material_distance_m": 0.0,
+        "backend": "original_step_brep"
+      }
+    },
+    {
+      "id": "rod",
+      "fixed": false,
+      "color": [
+        0.82,
+        0.76,
+        0.4,
+        1.0
+      ],
+      "position_m": [
+        0.0030000000000009286,
+        0.02400000000000004,
+        0.052000000000000164
+      ],
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_position_m": [
+        0.0030000000000009286,
+        0.02400000000000004,
+        0.052000000000000164
+      ],
+      "density_kg_m3": 2700.0,
+      "mass_kg": 0.009133552722754729,
+      "volume_m3": 3.382797304723974e-06,
+      "inertia_kg_m2": [
+        [
+          8.485101891507638e-08,
+          1.4223041944205763e-20,
+          1.6030389815568924e-20
+        ],
+        [
+          1.4223041944205763e-20,
+          6.9672891441094915e-06,
+          2.514570951461792e-21
+        ],
+        [
+          1.6030389815568924e-20,
+          2.514570951461792e-21,
+          6.930047728823423e-06
+        ]
+      ],
+      "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-003.obj",
+      "audit_mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-003.obj",
+      "mesh_sha256": "b3e8fdb89f0e931d43f71699c7b6a90a4b56cbaa242ae8423111a2d498666926",
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-003.step",
+      "source_sha256": "a3390c394ef3ac2cd15338b14f8c3035a9260493a0d9cbac942b398368a9a886",
+      "source_stat": [
+        59957,
+        1789265304000000000,
+        465435624032
+      ],
+      "source_kind": "step",
+      "source_solid_ids": [
+        "solid_1"
+      ],
+      "source_components": [
+        {
+          "solid_id": "solid_1",
+          "source_node": "solid_1",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-003-solid-001.obj",
+          "sha256": "b3e8fdb89f0e931d43f71699c7b6a90a4b56cbaa242ae8423111a2d498666926",
+          "vertex_count": 2036,
+          "triangle_count": 4076,
+          "export_vertex_error_max_m": 0.0
+        }
+      ],
+      "source_analytic_material": [],
+      "mass_properties_source": "occt_brep",
+      "mass_combination": "sum_source_properties_with_parallel_axis_theorem",
+      "fidelity": {
+        "representation": "original_source_surface_mesh",
+        "convex_hull_used": false,
+        "decomposition_used": false,
+        "decimation_used": false,
+        "topology_repaired": false,
+        "coincident_vertex_seams_welded": true,
+        "step_linear_deflection_m": 1e-06,
+        "step_angular_tolerance_rad": 0.12,
+        "step_all_surface_deflection_control": true,
+        "brep_surface_distance_independently_measured": false,
+        "collider_and_audit_use_same_original_mesh": true,
+        "original_mesh_retained_in_collider": true,
+        "source_mesh_refinement": "conformal midpoint subdivision of original facets",
+        "source_mesh_max_edge_m": 0.08,
+        "contained_analytic_material_supplements": 0,
+        "export_vertex_error_max_m": 0.0,
+        "triangle_count": 4076
+      },
+      "distance_query": {
+        "space": "world_metres",
+        "inside_material_distance_m": 0.0,
+        "backend": "original_step_brep"
+      }
+    },
+    {
+      "id": "slider",
+      "fixed": false,
+      "color": [
+        0.2,
+        0.58,
+        0.72,
+        1.0
+      ],
+      "position_m": [
+        0.07564474205617013,
+        0.0377282747485805,
+        0.052
+      ],
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_position_m": [
+        0.07564474205617013,
+        0.0377282747485805,
+        0.052
+      ],
+      "density_kg_m3": 2700.0,
+      "mass_kg": 0.0369087002717568,
+      "volume_m3": 1.3669888989539556e-05,
+      "inertia_kg_m2": [
+        [
+          1.1990761427433923e-06,
+          -8.093449623041191e-07,
+          -1.9981280149603316e-20
+        ],
+        [
+          -8.093449623041191e-07,
+          3.8611974634048665e-05,
+          3.009291487189094e-20
+        ],
+        [
+          -1.9981280149603316e-20,
+          3.009291487189094e-20,
+          3.889386046694071e-05
+        ]
+      ],
+      "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-004.obj",
+      "audit_mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\body-004.obj",
+      "mesh_sha256": "bf31c835bd895d357c250673a90ddb69b0506550545d348dac72e4aecf95a668",
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-004.step",
+      "source_sha256": "013b16283b90486046484311bbdb575390a98577f8c2ed3f56e12ba681b4df8d",
+      "source_stat": [
+        67819,
+        1789265304000000000,
+        465435624128
+      ],
+      "source_kind": "step",
+      "source_solid_ids": [
+        "solid_1",
+        "solid_2"
+      ],
+      "source_components": [
+        {
+          "solid_id": "solid_1",
+          "source_node": "solid_1",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-004-solid-001.obj",
+          "sha256": "8cb7c2bb34b184d29a68d781a0fc0bf09610c230626c930238ac13e7e93de4ec",
+          "vertex_count": 1072,
+          "triangle_count": 2140,
+          "export_vertex_error_max_m": 0.0
+        },
+        {
+          "solid_id": "solid_2",
+          "source_node": "solid_2",
+          "mesh_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\source_components\\body-004-solid-002.obj",
+          "sha256": "5101635151125db28875ba6a672e4ea8e38c8989076c8f57f4f71a14eb71a2bc",
+          "vertex_count": 680,
+          "triangle_count": 1356,
+          "export_vertex_error_max_m": 0.0
+        }
+      ],
+      "source_analytic_material": [
+        {
+          "type": "capsule",
+          "center_source_m": [
+            0.043000000000000003,
+            0.022600000000000002,
+            0.052000000000000005
+          ],
+          "axis_source": [
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          "radius_m": 0.0015,
+          "straight_length_m": 0.001,
+          "source_cylinder_length_m": 0.004,
+          "proof": {
+            "method": "OCCT non-destructive Cut(complete_source_derived_cylinder, original_solid)",
+            "cut_is_done": true,
+            "missing_volume_mm3": 0.0,
+            "candidate_cylinder_volume_mm3": 28.274333882308138,
+            "source_cylinder_face_indices": [
+              7
+            ],
+            "source_face_axial_intervals_mm": [
+              [
+                20.6,
+                24.6
+              ]
+            ],
+            "source_axis_anchor_mm": [
+              43.0,
+              0.0,
+              52.0
+            ],
+            "source_cylinder_axial_interval_mm": [
+              20.6,
+              24.6
+            ],
+            "capsule_containment": "Same radius; straight segment length L-2r; hemispherical ends stay between the containing cylinder end planes",
+            "original_solid_modified": false
+          },
+          "source_solid_id": "solid_2",
+          "center_local_m": [
+            -0.03264474205617012,
+            -0.0151282747485805,
+            6.938893903907228e-18
+          ]
+        }
+      ],
+      "mass_properties_source": "occt_brep",
+      "mass_combination": "sum_source_properties_with_parallel_axis_theorem",
+      "fidelity": {
+        "representation": "original_source_surface_mesh",
+        "convex_hull_used": false,
+        "decomposition_used": false,
+        "decimation_used": false,
+        "topology_repaired": false,
+        "coincident_vertex_seams_welded": true,
+        "step_linear_deflection_m": 1e-06,
+        "step_angular_tolerance_rad": 0.12,
+        "step_all_surface_deflection_control": true,
+        "brep_surface_distance_independently_measured": false,
+        "collider_and_audit_use_same_original_mesh": false,
+        "original_mesh_retained_in_collider": true,
+        "source_mesh_refinement": "conformal midpoint subdivision of original facets",
+        "source_mesh_max_edge_m": 0.08,
+        "contained_analytic_material_supplements": 1,
+        "export_vertex_error_max_m": 0.0,
+        "triangle_count": 3496
+      },
+      "distance_query": {
+        "space": "world_metres",
+        "inside_material_distance_m": 0.0,
+        "backend": "original_step_brep"
+      }
+    }
+  ],
+  "model_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_dashboard_20260913\\assets\\light_crank_slider\\final-source-geometry\\model.glb",
+  "source_bindings": [
+    {
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-001.step",
+      "source_sha256": "0b86b6a252225d98b3b5a3c982f82c7b09199e6d5b033c764727d165e49df39e",
+      "source_kind": "step",
+      "unit_conversion": "STEP-declared units imported as millimetres, converted to metres",
+      "solid_count": 4,
+      "solid_owners": {
+        "solid_1": "crank",
+        "solid_2": "crank",
+        "solid_3": "crank",
+        "solid_4": "crank"
+      }
+    },
+    {
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-002.step",
+      "source_sha256": "f9dba4542b741c2d483c78790a233a4a6b983c81f404715f8f4a2962292bd1b9",
+      "source_kind": "step",
+      "unit_conversion": "STEP-declared units imported as millimetres, converted to metres",
+      "solid_count": 1,
+      "solid_owners": {
+        "solid_1": "frame"
+      }
+    },
+    {
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-003.step",
+      "source_sha256": "a3390c394ef3ac2cd15338b14f8c3035a9260493a0d9cbac942b398368a9a886",
+      "source_kind": "step",
+      "unit_conversion": "STEP-declared units imported as millimetres, converted to metres",
+      "solid_count": 1,
+      "solid_owners": {
+        "solid_1": "rod"
+      }
+    },
+    {
+      "source_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r04\\design\\body-004.step",
+      "source_sha256": "013b16283b90486046484311bbdb575390a98577f8c2ed3f56e12ba681b4df8d",
+      "source_kind": "step",
+      "unit_conversion": "STEP-declared units imported as millimetres, converted to metres",
+      "solid_count": 2,
+      "solid_owners": {
+        "solid_1": "slider",
+        "solid_2": "slider"
+      }
+    }
+  ],
+  "errors": [],
+  "geometry_implementation_sha256": "81b9e2554fd869b4eddd45e035fb101cc9cbf26c8a2490e7af04f1ed8f4bc5be"
+}

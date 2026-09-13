@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>四个 Light 实验 · 最终看板</title><link rel="icon" href="data:,"><link rel="stylesheet" href="dashboard.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script></head>
+<body>
+<header class="top"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>机械实验室<span class="brand-sub">LIGHT / RUN REVIEW</span></span></a><span id="snapshot">读取最终记录…</span><a href="#briefing" class="top-link">汇总</a><a href="#timing-section" class="top-link">用时对比</a><a href="metrics.json" target="_blank" class="top-link">数据记录 ↗</a></header>
+<main id="catalog">
+ <section class="intro"><div><p class="eyebrow"><span class="dot"></span> 4 个项目 · 同一实验的连续迭代</p><h1>四台日常机械，<br>这次跑到了哪一步？</h1><p class="lead">一张板看完四机结论、失败分类和合同缺口。<br>下面再进模型回放和三段用时。只读，不重跑。</p></div><div class="experiment-stamp"><b>LIGHT</b><span>1h 项目预算 · 60s / 次仿真</span><span>≤ 2 个测试 · ≤ 10 个实物零件</span><small>本地 Astra Max · 标准速度<br>HPC 物理计算 · 已结束</small></div></section>
+  <section id="briefing" class="briefing" aria-label="统一汇总">
+  <div class="briefing-head"><p class="eyebrow"><span class="dot"></span> UNIFIED BRIEFING</p><h2 id="briefing-headline">读取汇总…</h2><p id="briefing-policy" class="footnote"></p><p id="compare-rule" class="footnote"></p></div>
+  <div id="machine-strip" class="machine-strip"></div>
+  <div class="briefing-grid">
+    <article class="surface class-panel" id="class-mechanical"></article>
+    <article class="surface class-panel" id="class-process"></article>
+  </div>
+  <article class="surface contract-panel"><div class="section-heading" style="margin:0 0 12px"><div><p class="eyebrow">HARNESS CONTRACT</p><h2>四条预算合同</h2></div><span class="pill">1/3/4 仍有口径缺口</span></div>
+  <div id="contract-grid" class="contract-grid"></div>
+  <p class="footnote" style="margin:12px 0 0">待判定：</p>
+  <ul id="open-questions" class="plain-list"></ul>
+  <p><a id="repro-index" hidden target="_blank" href="repro/INDEX.md">复现包总入口 ↗</a></p>
+</article>
+  <article class="surface paper-panel" id="paper-panel"><div class="section-heading" style="margin:0 0 12px"><div><p class="eyebrow">PAPER / TODO</p><h2>刘圳三点 vs 实验表</h2></div><span class="pill">主表几乎全是待准备</span></div>
+  <p id="paper-gap" class="class-note"></p>
+  <ul id="lz-cares" class="plain-list"></ul>
+  <div id="e-table" class="e-table"></div>
+  <p id="paper-todos" class="footnote"></p>
+</article>
+<article class="surface roster-panel"><div class="section-heading" style="margin:0 0 12px"><div><p class="eyebrow">WHO DOES WHAT</p><h2>现在谁干什么</h2></div></div><div id="roster-grid" class="roster-grid"></div></article>
+ </section>
+<section id="counts" class="kpis" aria-label="实验总览"></section><p class="footnote token-note">Token 用量记录不完整，本页暂不汇总总数。<a href="tokens.json" target="_blank">查看已记录用量与缺口 ↗</a></p>
+ <section class="section-heading"><div><p class="eyebrow">THE MACHINES</p><h2>打开一台，检查它的运动</h2></div><p>原始 STEP 零件外形 · 已保存的实际姿态</p></section>
+ <div id="filters" hidden></div><div id="cards" class="cards"></div>
+ <section id="timing-section" class="table-section"><div class="section-heading"><div><p class="eyebrow">TIME & PROGRESS</p><h2>时间用在哪里，任务走到哪里</h2></div><span class="pill">三段时间分别计算</span></div><div class="table-scroll"><table><thead><tr><th>机械</th><th>原始轮</th><th>首次补时轮</th><th>本次续跑</th><th>累计 active</th><th>控制器运行 wall</th><th>正式任务</th></tr></thead><tbody id="timing-table"></tbody></table></div><div class="legend"><span><i class="swatch original"></i>原始轮</span><span><i class="swatch first"></i>首次补时</span><span><i class="swatch second"></i>本次续跑</span></div><p class="footnote">active 是项目实际记账的工作时间。wall 包含该轮等待与自动准备；这里合计各控制器实际运行时段，隔夜停机另列。补时保留原预算记录，未重置为新的 1 小时实验。</p></section>
+ <section class="bottom-grid"><article class="surface"><p class="eyebrow">WHAT CHANGED</p><h2>任务调整记录</h2><div id="changes-overview"></div></article><article class="surface"><p class="eyebrow">HOW TO READ</p><h2>怎么理解这些结果</h2><ul class="plain-list"><li><b>正式通过</b><span>以主流程最终结果为准。开发试算通过会单独标注。</span></li><li><b>运动前缀</b><span>只播放超时前实际保存的片段，播放到末点停止。</span></li><li><b>穿模检查</b><span>原形轨迹按 10 Hz 均匀取样，包含首末点；检查范围随记录展示。</span></li><li><b>STEP 登记修复</b><span>四台的当前源模型已重新核验。修复保留旧证据，不追改这轮实验成绩。</span></li></ul></article></section>
+ <footer>有限时间内的真实实验记录 · 模型和失败版本均保留 · <a href="README.md" target="_blank">看板说明 ↗</a></footer>
+</main>
+<main id="detail" hidden>
+ <div class="detail-heading"><div><a class="back" href="index.html">← 四个实验</a><p class="eyebrow" id="detail-kicker">SAVED MOTION / 原形回放</p><h1 id="case-title"></h1><p id="case-summary"></p></div><span class="status" id="case-status"></span></div>
+ <section id="detail-metrics" class="detail-kpis"></section><nav id="download-links" class="downloads" aria-label="模型和结果下载"></nav>
+ <div class="track-selects"><label>选择版本与记录<select id="track-select"></select></label><label class="check"><input type="checkbox" id="compare">并排对照另一条记录</label><label id="compare-select-wrap" hidden>对照记录<select id="compare-select"></select></label></div>
+ <section id="failure-panel" class="failure-panel" aria-label="所选记录的失败位置"></section>
+ <div id="stage-grid"><section class="pane" id="pane-main"><div class="pane-label"><span id="main-kind"></span><span id="main-track"></span></div><div class="canvas-wrap" id="view-main"><canvas aria-label="主轨迹三维模型"></canvas><div class="load-message">加载原形与轨迹…</div></div><div class="pane-time" id="main-time"></div></section><section class="pane" id="pane-compare" hidden><div class="pane-label"><span id="compare-kind"></span><span id="compare-track"></span></div><div class="canvas-wrap" id="view-compare"><canvas aria-label="对照轨迹三维模型"></canvas><div class="load-message">加载对照记录…</div></div><div class="pane-time" id="compare-time"></div></section></div>
+ <section class="transport"><div class="transport-row"><button id="play" class="primary">▶ 播放</button><button id="prev" title="上一保存帧">← 前帧</button><button id="next" title="下一保存帧">后帧 →</button><button id="last-frame">末帧</button><input id="scrub" aria-label="运动进度" type="range" min="0" max="10000" step="1" value="0"><label>速度<select id="speed"><option value="auto">自动适配</option><option value="0.01">0.01×</option><option value="0.1">0.1×</option><option value="0.5">0.5×</option><option value="1">1×</option><option value="2">2×</option><option value="10">10×</option></select></label><label class="check"><input id="loop" type="checkbox">循环</label></div><div class="display-row"><button id="reset">整机视角</button><button id="front">正面</button><button id="top-view">俯视</button><label class="check"><input id="smooth" type="checkbox" checked>平滑显示</label><label class="check"><input id="wire" type="checkbox">线框</label><label class="check"><input id="ghost" type="checkbox">机架半透明</label><label class="check"><input id="trails" type="checkbox">轨迹线</label><label>选择运动体<select id="body-select"></select></label><button id="focus">近看</button></div><p id="play-note" class="muted"></p></section>
+ <div id="fatal" role="alert" hidden></div>
+ <section class="details-grid"><article class="surface"><h2>这段运动说明什么</h2><p id="case-notes"></p><p id="track-note" class="callout"></p></article><article class="surface"><h2>记录范围</h2><p id="track-meta"></p><p id="animation-note"></p><details><summary>查看原始来源和绑定信息</summary><pre id="source-info"></pre></details></article></section>
+ <section class="bottom-grid"><article class="surface"><h2>测试与迭代</h2><div id="detail-tests"></div><div id="detail-iterations"></div></article><article class="surface"><h2>三轮用时</h2><div id="detail-timing"></div><h3>测试变化</h3><div id="detail-changes"></div><details><summary>对应源数据</summary><pre id="detail-source"></pre></details></article></section>
+ <footer><a href="index.html">← 返回实验总览</a><span>默认播放真实保存记录；平滑显示仅在相邻姿态间插值。</span></footer>
+</main><script type="module" src="gallery.js"></script></body></html>

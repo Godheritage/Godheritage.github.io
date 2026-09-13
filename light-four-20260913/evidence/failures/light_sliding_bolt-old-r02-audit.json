@@ -1,0 +1,123 @@
+{
+  "schema_version": "slim_geometry_audit_v1",
+  "passed": false,
+  "audit_implementation_sha256": "7120e9e471aedf7f63e986239cd95ee3349ccf313e6a9ca1ff1d7ee88fa88a2c",
+  "checked_solver_samples": 12,
+  "available_solver_samples": 2570,
+  "intersecting_candidates": 21,
+  "max_overlap_m3": 2.7912573414743327e-12,
+  "boolean_checks": 21,
+  "clearance_queries": 8,
+  "clearance_queries_deferred": 12,
+  "cached_proof_samples": 2,
+  "cached_proof_solver_samples": 2,
+  "cached_proof_pairs": {
+    "bolt/door": 2
+  },
+  "unchanged_pair_checks_reused": 0,
+  "unchanged_pair_policy": "Exact unchanged relative pose and identical active local exclusions within this source-bound audit; moving-to-static pairs remain checked",
+  "containment": {
+    "source_part_counts": {
+      "bolt": 1,
+      "door": 1,
+      "frame": 2,
+      "handle": 1
+    },
+    "witness_counts": {
+      "bolt": 1,
+      "door": 1,
+      "frame": 2,
+      "handle": 1
+    },
+    "step_classification_queries": 58,
+    "mesh_part_contains_calls": 0,
+    "step_classifier_tolerance_mm": 1e-07,
+    "material_semantics": "union of original closed parts; cavities retained within each part"
+  },
+  "clearance_proof_policy": {
+    "source": "original_step_brep",
+    "numerical_margin_m": 1e-08,
+    "motion_bound": "relative translation + 2*source radius*sin(relative rotation angle/2)",
+    "uses_assumed_joint_rigidity": false,
+    "counter_unit": "body_pair_at_solver_sample"
+  },
+  "boolean_roundoff_volume_m3": 1e-12,
+  "violations": [
+    {
+      "time_s": 1.1,
+      "body_a": "door",
+      "body_b": "handle",
+      "kind": "original_solid_interpenetration",
+      "overlap_m3": 2.7912573414743327e-12
+    }
+  ],
+  "scope": "Original geometry at uniform 10 Hz saved poses with exact endpoints; no claim for unsampled states or continuous time",
+  "elapsed_seconds": 3.6623659000033513,
+  "candidate_solver_samples": 27,
+  "sampling_policy": {
+    "schema_version": "0.1",
+    "mode": "progressive_saved_trace_uniform_10hz",
+    "nominal_interval_s": 0.1,
+    "original_saved_sample_count": 2570,
+    "selected_sample_count": 27,
+    "selected_source_indices": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500,
+      1600,
+      1700,
+      1800,
+      1900,
+      2000,
+      2100,
+      2200,
+      2300,
+      2400,
+      2500,
+      2569
+    ],
+    "trace_endpoints_retained": true,
+    "phase_boundaries_forced": false,
+    "contact_transitions_forced": false,
+    "progressive_pair_budget_enabled": false,
+    "every_saved_pose_mesh_audited": false,
+    "stop_rule": "first_confirmed_violation"
+  },
+  "audited_source_indices": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100
+  ],
+  "request_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_sliding_bolt\\workspace\\.runtime_runs\\author_tools\\simulate-ja8tojj2\\tests\\manual_lock_release_open\\request.json",
+  "trace_file": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_sliding_bolt\\workspace\\.runtime_runs\\author_tools\\simulate-ja8tojj2\\tests\\manual_lock_release_open\\physical.trace.numerical\\a001\\physical.trace.data\\prefix.json",
+  "certified": false,
+  "prefix_only": true,
+  "recorded_time_range_s": [
+    0.0,
+    2.569
+  ],
+  "requested_duration_s": 3.8,
+  "physics_rerun": false
+}

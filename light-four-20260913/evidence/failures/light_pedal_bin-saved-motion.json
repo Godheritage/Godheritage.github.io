@@ -1,0 +1,41 @@
+{
+  "id": "saved-motion",
+  "test_id": "press_hold_release",
+  "simulation_id": "simulate-9mw1urxb",
+  "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_pedal_bin\\workspace\\.runtime_runs\\author_tools\\simulate-9mw1urxb\\tests\\press_hold_release\\physical.trace.numerical\\a001\\physical.trace.data\\prefix.json",
+  "time_range_s": [
+    0,
+    1.206
+  ],
+  "events": [
+    {
+      "kind": "incomplete_timeout",
+      "time_s": 1.206,
+      "body_ids": [],
+      "point_a_m": null,
+      "point_b_m": null,
+      "value": 1.206,
+      "threshold": 3.4,
+      "unit": "simulated_seconds",
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_pedal_bin\\workspace\\.runtime_runs\\author_tools\\simulate-9mw1urxb\\tests\\press_hold_release\\physical.trace.numerical\\a001\\physical.trace.data\\prefix.json",
+      "track_id": "saved-motion",
+      "evidence_level": "incomplete_not_proven_function_failure",
+      "description": "跳转至最后已确认帧；这是保存边界，不是确切的物理故障位置"
+    }
+  ],
+  "uncovered_intervals": [
+    {
+      "start_s": 1.206,
+      "end_s": 3.4,
+      "start_exclusive": true,
+      "status": "not_recorded"
+    }
+  ],
+  "failed_assertions": [],
+  "unknowns": [
+    "没有该attempt的最终断言结果；不得把超时或未记录区间直接标成某项功能断言失败",
+    "没有该轨迹的已保存运动几何审核报告",
+    "execution-failure里的NO_READABLE_PREFIX是旧记录；现已通过reader读取指定已发布前缀，不据旧字段说没有数据"
+  ],
+  "body_ids": []
+}

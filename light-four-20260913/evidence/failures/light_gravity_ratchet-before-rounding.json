@@ -1,0 +1,244 @@
+{
+  "id": "before-rounding",
+  "test_id": "forward_then_reverse",
+  "simulation_id": "simulate-yx8hvt3k",
+  "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+  "time_range_s": [
+    0,
+    0.265
+  ],
+  "events": [
+    {
+      "kind": "contact_penetration",
+      "time_s": 0.265,
+      "body_ids": [
+        "pawl",
+        "wheel"
+      ],
+      "point_a_m": [
+        -0.005444534854783198,
+        0.0030000000260770317,
+        0.12462089950547389
+      ],
+      "point_b_m": [
+        -0.0054154160564704925,
+        0.0030000000260770325,
+        0.12470587348236867
+      ],
+      "value": 8.982473809737712e-05,
+      "threshold": 5e-05,
+      "unit": "m",
+      "comparison": ">",
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "track_id": "before-rounding",
+      "evidence_level": "recorded_native_hard_gate_failure",
+      "description": "原生接触穿入门失败；该数值不是原STEP实体的全局穿入深度",
+      "raw_failure": {
+        "kind": "contact_penetration",
+        "time_s": 0.265,
+        "count": 1,
+        "max_penetration_m": 8.982473809737712e-05,
+        "pairs": [
+          {
+            "body_a": "pawl",
+            "body_b": "wheel",
+            "distance_m": -8.982473809737712e-05,
+            "point_a_m": [
+              -0.005444534854783198,
+              0.0030000000260770317,
+              0.12462089950547389
+            ],
+            "point_b_m": [
+              -0.0054154160564704925,
+              0.0030000000260770325,
+              0.12470587348236867
+            ],
+            "force_n": [
+              11.023444590268422,
+              -0.04732193743461121,
+              1.6553167470004775
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "uncovered_intervals": [
+    {
+      "start_s": 0.265,
+      "end_s": 4.5,
+      "start_exclusive": true,
+      "status": "not_recorded"
+    }
+  ],
+  "failed_assertions": [
+    {
+      "id": "forward_travel",
+      "criterion_ids": [
+        "forward_passage"
+      ],
+      "purpose": "At least three actual wheel pitches in the 2.4-second forward interval; tooth-relative events are additionally counted from geometry and motion.",
+      "expression": "last(before(signal('wheel_bearing.coordinate'),2.4))-first(signal('wheel_bearing.coordinate')) >= 1.5707963267948966",
+      "passed": false,
+      "observed_operands": [
+        0.2756846211950563,
+        1.5707963267948966
+      ],
+      "classification": "recorded_false_on_aborted_prefix",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": 0.2756846211950563,
+      "threshold": 1.5707963267948966,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "mean_rate_low",
+      "criterion_ids": [
+        "forward_passage"
+      ],
+      "purpose": "Mean actual forward rate at least one pitch per second.",
+      "expression": "(last(before(signal('wheel_bearing.coordinate'),2.4))-first(signal('wheel_bearing.coordinate')))/2.4 >= 0.5235987755982988",
+      "passed": false,
+      "observed_operands": [
+        0.1148685921646068,
+        0.5235987755982988
+      ],
+      "classification": "recorded_false_on_aborted_prefix",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": 0.1148685921646068,
+      "threshold": 0.5235987755982988,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "pawl_cycles",
+      "criterion_ids": [
+        "gravity_engagement"
+      ],
+      "purpose": "At least two resolved pawl lifting/return cycles; verify releases and gravity using contact records as well.",
+      "expression": "cycles(before(signal('pawl_bearing.coordinate'),2.4),0.06,0.04) >= 2",
+      "passed": false,
+      "observed_operands": [
+        0.0,
+        2.0
+      ],
+      "classification": "recorded_false_on_aborted_prefix",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": 0.0,
+      "threshold": 2.0,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "engagement_travel",
+      "criterion_ids": [
+        "reverse_engagement"
+      ],
+      "purpose": "Wheel range from reverse onset to scheduled hold is at most one measured pitch plus one degree.",
+      "expression": "span(window(signal('wheel_bearing.coordinate'),2.4,3.4)) <= 0.5410520681182421",
+      "passed": false,
+      "error": "The requested time window has no samples",
+      "classification": "missing_future_interval",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": null,
+      "threshold": null,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "hold_range",
+      "criterion_ids": [
+        "reverse_engagement",
+        "reverse_holding"
+      ],
+      "purpose": "A qualifying hold starts by 3.4 s and persists for 1.1 seconds.",
+      "expression": "span(window(signal('wheel_bearing.coordinate'),3.4,4.5)) <= 0.017453292519943295",
+      "passed": false,
+      "error": "The requested time window has no samples",
+      "classification": "missing_future_interval",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": null,
+      "threshold": null,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "hold_speed",
+      "criterion_ids": [
+        "reverse_engagement",
+        "reverse_holding"
+      ],
+      "purpose": "Throughout holding the absolute wheel speed is at most 0.02 rad/s.",
+      "expression": "max(abs(window(signal('wheel.angular_speed.y_rad_s'),3.4,4.5))) <= 0.02",
+      "passed": false,
+      "error": "The requested time window has no samples",
+      "classification": "missing_future_interval",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": null,
+      "threshold": null,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "drive_off",
+      "criterion_ids": [
+        "reverse_engagement",
+        "reverse_holding",
+        "physical_model"
+      ],
+      "purpose": "No forward-drive effort after the final forward step endpoint.",
+      "expression": "max(abs(after(signal('input.wheel_bearing.effort'),2.401))) <= 1e-12",
+      "passed": false,
+      "error": "The requested time window has no samples",
+      "classification": "missing_future_interval",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": null,
+      "threshold": null,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "hold_contact",
+      "criterion_ids": [
+        "reverse_holding"
+      ],
+      "purpose": "Continuous solved contact in the hold; independently resolve wheel-pawl identity and its resisting moment from force records.",
+      "expression": "min(window(signal('contact.count'),3.4,4.5)) >= 1",
+      "passed": false,
+      "error": "The requested time window has no samples",
+      "classification": "missing_future_interval",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": null,
+      "threshold": null,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    },
+    {
+      "id": "complete_duration",
+      "passed": false,
+      "error": "Simulation stopped before the requested duration",
+      "classification": "incomplete_duration",
+      "time_s": 0.265,
+      "body_ids": [],
+      "value": null,
+      "threshold": null,
+      "source_path": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_gravity_ratchet\\workspace\\.runtime_runs\\author_tools\\simulate-yx8hvt3k\\tests\\forward_then_reverse\\physical.trace.numerical\\a003\\physical.trace.json",
+      "note": "这是原文件的false；运行已提前中止，不据此宣称完整目标区间内必然功能失败"
+    }
+  ],
+  "unknowns": [
+    "原生接触门失败，但已有采样原STEP审核未报告交叠；二者证据范围不同，本次不推断新原因"
+  ],
+  "body_ids": [
+    "pawl",
+    "wheel"
+  ]
+}

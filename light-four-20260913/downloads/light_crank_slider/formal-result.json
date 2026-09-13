@@ -1,0 +1,157 @@
+{
+  "schema_version": "slim_harness_result_v1",
+  "status": "INCOMPLETE_EVIDENCE",
+  "revision": 4,
+  "complete_instance_pass": false,
+  "budget_decision": {
+    "schema_version": "slim_budget_decision_log_v1",
+    "kind": "decision_log",
+    "mechanical_certification": false,
+    "budget_decision": {
+      "action": "finish_partial",
+      "reason": "Both unchanged conditions exhausted the physical-process limit after approximately 1.15 simulated seconds.",
+      "tradeoff": "Preserve detailed geometry, partial evidence and unused credit while leaving three-cycle performance unresolved."
+    },
+    "pre_turn_budget": {
+      "remaining_active_seconds": 899.9454939000425,
+      "wall_seconds": 37576.73741099995,
+      "accounting_basis": "worker_elapsed_upper_estimate_plus_physics_elapsed"
+    },
+    "allowed_actions": [
+      "revise_mechanism",
+      "adjust_execution",
+      "adjust_task",
+      "finish_partial"
+    ],
+    "adjustment_allowed": true,
+    "feedback": {
+      "status": "NEEDS_REVISION",
+      "issues": [
+        "STEP receipt rejected: Wrong STEP verifier or scene"
+      ],
+      "attempt": "F:\\works\\CADHarnessLoop\\.runtime_runs\\light_four_20260912\\cases\\light_crank_slider\\workspace\\.runtime_runs\\projects\\light_crank_slider\\runs\\r03\\attempts\\a001",
+      "acceptance_policy": "slim_code_gates_v1",
+      "budget_timing": {
+        "schema_version": "budget_checkpoint_v1",
+        "tier": "light",
+        "tier_config": {
+          "name": "light",
+          "active_budget_seconds": 3600,
+          "simulation_timeout_seconds": 60,
+          "max_tasks_per_design": 2,
+          "min_parts": 0,
+          "max_parts": 10
+        },
+        "active_seconds": 4500.0545060999575,
+        "wall_seconds": 37576.515095599985,
+        "paused": true,
+        "pause_count": 16,
+        "total_pause_seconds": 33076.4340048001,
+        "budget_limit_seconds": 5400,
+        "remaining_active_seconds": 899.9454939000425,
+        "started_at": "2026-09-12T15:30:59.353352+00:00",
+        "checkpoint_at": "2026-09-13T01:57:15.866894+00:00",
+        "base_budget_limit_seconds": 3600,
+        "granted_active_seconds": 1800,
+        "grant_ledger": "budget_grants.json",
+        "checkpoint_monotonic": 365054.4282626,
+        "accounting_basis": "worker_elapsed_upper_estimate_plus_physics_elapsed",
+        "prior_unmeasured_wall_seconds": 0.026329600016694515,
+        "historical_active_incomplete": false,
+        "part_limit_basis": "named physical-part inventory (parts.json / declared manifest); scene.bodies is rigid-body count only",
+        "active_phase": "not_working",
+        "worker_wait_directory": null,
+        "worker_observer_started_monotonic": null,
+        "worker_observer_pid": null,
+        "worker_observed_wait_seconds": 0.0,
+        "worker_observation_issues": [],
+        "observed_work_seconds": 188.66816599998856,
+        "observed_wait_seconds": 11.312639400013722,
+        "unclassified_provider_seconds": 4310.685889300017,
+        "timing_overlap": {
+          "observed_work_overlaps_active": true,
+          "observed_wait_excluded_from_active": true,
+          "unclassified_provider_overlaps_active_upper_estimate": true,
+          "unclassified_is_not_net_thinking": true,
+          "token_counts_are_not_seconds": true
+        },
+        "unresolved_timing": "Provider-internal thinking, queue and stall time cannot be separated; hard-crash work since the last checkpoint is unknown (target interval 1s; scheduling or blocking may extend it).",
+        "excluded_observed_waits": "CLI downtime, explicit recovery backoff, declared resource admission wait; automatic Harness preparation/render/audit counted in wall only"
+      },
+      "tier": {
+        "name": "light",
+        "active_budget_seconds": 3600,
+        "simulation_timeout_seconds": 60,
+        "max_tasks_per_design": 2,
+        "min_parts": 0,
+        "max_parts": 10
+      },
+      "schema_version": "slim_harness_result_v1",
+      "revision": 3,
+      "updated_at": "2026-09-13T01:57:15.871821+00:00"
+    },
+    "recorded_at": "2026-09-13T02:09:40.698271+00:00"
+  },
+  "issues": [
+    "STEP receipt rejected: Wrong STEP verifier or scene"
+  ],
+  "completed_tests": [],
+  "pending_tests": [],
+  "original_task_pass_claimed": false,
+  "acceptance_policy": "slim_code_gates_v1",
+  "budget_timing": {
+    "schema_version": "budget_checkpoint_v1",
+    "tier": "light",
+    "tier_config": {
+      "name": "light",
+      "active_budget_seconds": 3600,
+      "simulation_timeout_seconds": 60,
+      "max_tasks_per_design": 2,
+      "min_parts": 0,
+      "max_parts": 10
+    },
+    "active_seconds": 5240.898408099951,
+    "wall_seconds": 38321.350025499996,
+    "paused": true,
+    "pause_count": 17,
+    "total_pause_seconds": 33080.42503260006,
+    "budget_limit_seconds": 5400,
+    "remaining_active_seconds": 159.10159190004924,
+    "started_at": "2026-09-12T15:30:59.353352+00:00",
+    "checkpoint_at": "2026-09-13T02:09:40.701816+00:00",
+    "base_budget_limit_seconds": 3600,
+    "granted_active_seconds": 1800,
+    "grant_ledger": "budget_grants.json",
+    "checkpoint_monotonic": 365799.263164,
+    "accounting_basis": "worker_elapsed_upper_estimate_plus_physics_elapsed",
+    "prior_unmeasured_wall_seconds": 0.026329600016694515,
+    "historical_active_incomplete": false,
+    "part_limit_basis": "named physical-part inventory (parts.json / declared manifest); scene.bodies is rigid-body count only",
+    "active_phase": "not_working",
+    "worker_wait_directory": null,
+    "worker_observer_started_monotonic": 365054.7495251,
+    "worker_observer_pid": 516,
+    "worker_observed_wait_seconds": 3.6439696999732405,
+    "worker_observation_issues": [],
+    "observed_work_seconds": 308.3894350999617,
+    "observed_wait_seconds": 14.958582999999635,
+    "unclassified_provider_seconds": 4931.6288506001,
+    "timing_overlap": {
+      "observed_work_overlaps_active": true,
+      "observed_wait_excluded_from_active": true,
+      "unclassified_provider_overlaps_active_upper_estimate": true,
+      "unclassified_is_not_net_thinking": true,
+      "token_counts_are_not_seconds": true
+    },
+    "unresolved_timing": "Provider-internal thinking, queue and stall time cannot be separated; hard-crash work since the last checkpoint is unknown (target interval 1s; scheduling or blocking may extend it).",
+    "excluded_observed_waits": "CLI downtime, explicit recovery backoff, declared resource admission wait; automatic Harness preparation/render/audit counted in wall only"
+  },
+  "tier": {
+    "name": "light",
+    "active_budget_seconds": 3600,
+    "simulation_timeout_seconds": 60,
+    "max_tasks_per_design": 2,
+    "min_parts": 0,
+    "max_parts": 10
+  }
+}
