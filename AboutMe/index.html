@@ -106,10 +106,13 @@
     .links a:hover { color: var(--accent); }
 
     /* timeline rows (experience, education) */
-    .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; padding: 12px 0; }
+    .row { display: grid; grid-template-columns: 52px 1fr auto; gap: 4px 20px; padding: 14px 0; align-items: baseline; }
     .row + .row { border-top: 1px dashed var(--rule); }
+    .logo { grid-row: span 2; align-self: start; width: 52px; height: 52px; padding: 5px; margin-top: 2px;
+            background: #fff; border: 1px solid var(--rule); border-radius: 10px; }
+    .logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
     .org { font: 500 17.5px/1.35 var(--serif); }
-    .what { grid-column: 1 / -1; margin: 0; font-size: 14.5px; color: var(--ink-2); max-width: 70ch; }
+    .what { grid-column: 2 / -1; margin: 0; font-size: 14.5px; color: var(--ink-2); max-width: 70ch; }
     .row .date { text-align: right; }
 
     .plain { margin: 0; padding-left: 0; list-style: none; }
@@ -130,8 +133,10 @@
       section > h2 { position: static; }
       .pub { grid-template-columns: 1fr; gap: 14px; }
       .thumb { max-width: 420px; }
-      .row { grid-template-columns: 1fr; }
-      .row .date { text-align: left; grid-row: 1; }
+      .row { grid-template-columns: 44px 1fr; gap: 2px 14px; }
+      .logo { width: 44px; height: 44px; grid-row: span 3; }
+      .row .date { text-align: left; grid-column: 2; grid-row: 1; }
+      .what { grid-column: 2; }
       .news li { grid-template-columns: 1fr; gap: 0; }
     }
   </style>
@@ -261,16 +266,19 @@
     <div class="body">
       <!-- TODO confirm start date and team name for Hunyuan -->
       <div class="row">
+        <span class="logo"><img src="images/logo_hunyuan.png" alt="Tencent Hunyuan" loading="lazy"></span>
         <span class="org">Tencent Hunyuan</span>
         <span class="date">2026 – now</span>
         <p class="what">Research Intern.</p>
       </div>
       <div class="row">
+        <span class="logo"><img src="images/logo_rhythmo.png" alt="RhythMo" loading="lazy"></span>
         <span class="org">RhythMo</span>
         <span class="date">2021.08 – 2023.10</span>
         <p class="what">Unity developer on RhyStudio, a home full-body motion capture app for VTubers: live mocap-driven avatars, drag-and-drop VRM import, and multi-user rooms over Photon.</p>
       </div>
       <div class="row">
+        <span class="logo"><img src="images/logo_netease.png" alt="NetEase Games" loading="lazy"></span>
         <span class="org">NetEase Games · X23 Studio</span>
         <span class="date">2020.07 – 2021.09</span>
         <p class="what">Game designer intern on <i>Cygnus Enterprises</i>, released on Steam. Built a procedural infinite dungeon generator and the enemy spawning rules that scale with depth.</p>
@@ -282,16 +290,19 @@
     <h2>Education</h2>
     <div class="body">
       <div class="row">
+        <span class="logo"><img src="images/logo_cuhksz.png" alt="CUHK-Shenzhen" loading="lazy"></span>
         <span class="org">The Chinese University of Hong Kong, Shenzhen</span>
         <span class="date">2025.09 – now</span>
         <p class="what">Ph.D., School of Data Science. Advisor: Zhen Liu.</p>
       </div>
       <div class="row">
+        <span class="logo"><img src="images/logo_shanghaitech.png" alt="ShanghaiTech University" loading="lazy"></span>
         <span class="org">ShanghaiTech University</span>
         <span class="date">2022.09 – 2025.07</span>
         <p class="what">M.Eng. in Computer Science, VDI Center. Advisor: Lan Xu.</p>
       </div>
       <div class="row">
+        <span class="logo"><img src="images/logo_shanghaitech.png" alt="ShanghaiTech University" loading="lazy"></span>
         <span class="org">ShanghaiTech University</span>
         <span class="date">2018.09 – 2022.07</span>
         <p class="what">B.Eng. in Computer Science. President of the Lilith Games Club (2021–22), where we ran game jams and made a multiplayer game, <i>Wu Xing</i>.</p>
@@ -303,7 +314,7 @@
     <h2>Service</h2>
     <div class="body">
       <ul class="plain">
-        <li>Reviewer: ICLR 2026, CVPR 2026</li>
+        <li>Reviewer: ICLR 2026, CVPR 2026, ICLR 2027</li>
       </ul>
     </div>
   </section>
